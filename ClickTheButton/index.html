@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Click The Button</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <button id="btn" onclick="increase()">Click Me</button>
+      <h4>You clicked The button <span id="counter"></span> Times</h4>
+    </div>
+  </body>
+  <script>
+    window.onload = function(){
+      if(localStorage.getItem("currentCount") === null){
+        document.querySelector("#counter").innerText = 0;
+      }else{
+        document.querySelector("#counter").innerText = localStorage.getItem('currentCount');
+      }
+    }
+
+    function increase(){
+      let count = parseInt(document.querySelector("#counter").innerText);
+      count += 1;
+      document.querySelector("#counter").innerText = count;
+      localStorage.setItem("currentCount", count);
+    }
+  </script>
+</html>

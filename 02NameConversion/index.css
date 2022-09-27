@@ -1,0 +1,81 @@
+.naming_conversion {
+  margin: 2em;
+  padding: 1.4em;
+  background: rgb(99, 71, 255);
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.naming_conversion .cases_div {
+  border-radius: 16px;
+  padding: 0.7em;
+}
+
+.naming_conversion #text {
+  margin: 0em 0em 1.4em;
+  outline: 0;
+  border-radius: 16px;
+  box-shadow: none;
+  border: navajowhite;
+  padding: 0.5em 1.4em;
+  width: 40%;
+}
+
+.cases_div {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.case_div {
+  width: 100%;
+  background-color: rgb(241, 245, 245);
+  border-radius: 12px;
+  margin: 0.5em 0em;
+  padding: 0.5em;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 5px;
+}
+
+#text{
+  height: 30px;
+  font-size: 16px;
+}
+
+.case_div h1 {
+  font-size: 1em;
+  font-weight: 500;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0em;
+  margin: 0em;
+}
+
+.case_div p {
+  font-size: 1.2em;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0em;
+  margin: 0em;
+  font-family: sans-serif;
+  color: rgb(21, 9, 92);
+}
+
+#convert-btn {
+  outline: none;
+  box-shadow: none;
+  border: none;
+  border-radius: 12px;
+  padding: 0.3em 1.4em;
+  cursor: pointer;
+  width: 130px;
+  height: 45px;
+  background: rgb(27, 147, 245);
+  color: white;
+  font-size: 16px;
+  box-shadow: 0px 0px 10px rgba(28, 63, 109, 0.603);
+}
